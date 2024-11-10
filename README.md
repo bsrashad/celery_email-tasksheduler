@@ -23,9 +23,9 @@ This Django project allows users to schedule email reminders with customizable o
 ## Project Structure
 
 ```
-task_scheduler/
+celery_email-tasksheduler/
 │
-├── task_scheduler/               # Django project folder
+├── celery_email-tasksheduler/               # Django project folder
 │   ├── __init__.py               # Initializes the project with Celery app
 │   ├── celery.py                 # Celery configuration file
 │   ├── settings.py               # Project settings (includes Celery and email settings)
