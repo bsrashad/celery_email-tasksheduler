@@ -49,8 +49,8 @@ task_scheduler/
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/task_scheduler.git
-   cd task_scheduler
+   git clone https://github.com/bsrashad/celery_email-tasksheduler.git
+   cd celery_email-tasksheduler
    ```
 
 2. **Install Dependencies**:
@@ -83,7 +83,7 @@ task_scheduler/
 
 4. **Configure Environment Variables**:
 
-   Set up your email backend settings in `task_scheduler/settings.py`. Here’s an example using Gmail:
+   Set up your email backend settings in `celery_email-tasksheduler/settings.py`. Here’s an example using Gmail:
    
    ```python
    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -107,13 +107,13 @@ task_scheduler/
 
    Open separate terminals and start Celery worker and Celery beat:
 
-   - Start Celery worker:
+  - Start Celery worker:
      ```bash
-     celery -A task_scheduler worker --loglevel=info
+     celery -A celery_email-taskscheduler worker --loglevel=info
      ```
    - Start Celery beat (for periodic tasks):
      ```bash
-     celery -A task_scheduler beat --loglevel=info
+     celery -A celery_email-taskscheduler beat --loglevel=info
      ```
 
 7. **Start the Django Development Server**:
